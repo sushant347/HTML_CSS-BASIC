@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"><!--external csss-->
+    <link rel="stylesheet" href="style.css"><!--external css-->
      <style> /*Internal CSS*/
         footer{
             display: flex;
@@ -16,9 +16,10 @@
 </head>
 <body>  
 <header>
-    <div style="display:flex; align-items: center; gap:1rem"></div>
-    <div class="logo">S</div>
-         <h1>Sushant Gautam</h1>
+    <div style="display:flex; align-items: center; gap:1rem">
+        <div class="logo">S</div>
+        <h1>Sushant Gautam</h1>
+    </div>
     
  <nav>
     <ul>
@@ -28,83 +29,88 @@
         <li>content 4</li>
     </ul>
  </nav>   
-
 </header>
+
 <main>
     <div style="display:flex; gap:1rem;">
-<section>
-    <h2>Enter Details</h2>
-    <form>
-        <label for="name">Name</label>
-        <input type="text"id="name"placeholder="Name"  required>
-        <label for="Email">Email</label>
-        <input type="text"id="Email"placeholder="Email"  required>
-        <label for="Password">Password</label>
-        <input type="password"id="Password" placeholder="#####"  required>
-        <button type="submit" class="btn-submit">Submit</button>
-    </form>
-   
-</section>
-<aside> <div class="right-pane">
-        <div class="lists-row">
-          <div class="ordered">
-            <h2>Ordered List</h2>
-            <ol>
-              <li>Content 1</li>
-              <li>Content 2</li>
-              <li>Content 3</li>
-              <li>Content 4</li>
-            </ol>
-          </div>
+        <section>
+            <h2>Enter Details</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+                <label for="Email">Email</label>
+                <input type="text" id="Email" placeholder="Email" required>
+                <label for="Password">Password</label>
+                <input type="password" id="Password" placeholder="#####" required>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </section>
 
-          <div class="description">
-            <h2>Description List</h2>
-            <dl>
-              <dt>Name:</dt>
-              <dd>Sushant Gautam</dd>
-              <dt>Post:</dt>
-              <dd>Student</dd>
-            </dl>
-          </div>
-        </div>
+        <aside> 
+            <div class="right-pane">
+                <div class="lists-row">
+                    <div class="ordered">
+                        <h2>Ordered List</h2>
+                        <ol>
+                            <li>Content 1</li>
+                            <li>Content 2</li>
+                            <li>Content 3</li>
+                            <li>Content 4</li>
+                        </ol>
+                    </div>
 
-        <h2 class="table-title">Table</h2>
+                    <div class="description">
+                        <h2>Description List</h2>
+                        <dl>
+                            <dt>Name:</dt>
+                            <dd>Sushant Gautam</dd>
+                            <dt>Post:</dt>
+                            <dd>Student</dd>
+                        </dl>
+                    </div>
+                </div>
 
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Header 1</th>
-              <th>Header 2</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Row 1, cell 1</td>
-              <td>Row 1, cell 2</td>
-            </tr>
-            <tr>
-              <td>Row 2, cell 1</td>
-              <td>Row 2, cell 2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Footer 1</td>
-              <td>Footer 2</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
+                
+
+                <table class="data-table">
+                    <caption style="font-size: 28px;"><b>Table</b> </caption>
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Row 1, cell 1</td>
+                            <td>Row 1, cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2, cell 1</td>
+                            <td>Row 2, cell 2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Footer 1</td>
+                            <td>Footer 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </aside>
     </div>
-</aside>
-</div>
-<section style="width:100%">
-<video src="assets/sample_vid.mp4"height="455" controls poster="assets/image1.jpg"></video>
 
-</section> 
-<section style="width:100%">
-</section>
+    <!-- Multimedia Section -->
+    <section style="width:100%; margin-top: 2rem;">
+        <h1 style="text-align: center;">Multimedia</h1>
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px; width: 100%; max-width: 1200px; margin: 0 auto; padding: 1rem;">
+            <img src="assets/image1.jpg" alt="warrior" style="width: 50%; height: auto;">
+            <video src="assets/sample_vid.mp4" height=auto controls poster="assets/image1.jpg" style="width: 50%;"></video>
+        </div>
+    </section>
 </main>
+
 <footer>
 </footer>
 </body>
